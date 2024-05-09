@@ -1,0 +1,9 @@
+Git Assignment
+
+git remote add origin "git@github.com:Jass2k23/wad_assignments.git”(repo link)
+ git remote -v
+git add ass.txt 
+git commit -m "hogiya push"
+git push origin main
+ssh-keygen -t ed25519 -C "jass2k23@gmail.com"    
+git push origin master
