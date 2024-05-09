@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users List</title>
+</head>
+<body>
+    <h1>Users List</h1>
+    <ul id="usersList"></ul>
+
+    <script>
+        const usersList = document.getElementById("usersList");
+        const usersData = JSON.parse(localStorage.getItem("usersData")) || [];
+
+        // Check if there is any user data available
+        if (usersData.length === 0) {
+            const noDataMessage = document.createElement("li");
+            noDataMessage.textContent = "No users registered yet.";
+            usersList.appendChild(noDataMessage);
+        } else {
+            // Iterate over each user data and create list items
+            usersData.forEach((userData) => {
+                const listItem = document.createElement("li");
+                listItem.textContent = `Name: ${userData.name}, Email: ${userData.email}`;
+                usersList.appendChild(listItem);
+            });
+        }
+    </script>
+</body>
+</html>
