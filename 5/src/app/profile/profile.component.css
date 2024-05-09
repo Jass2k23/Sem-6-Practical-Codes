@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-details {
+    margin-top: 20px;
+}
+
+.profile-item {
+    margin-bottom: 10px;
+}
+
+.profile-item label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.profile-item span {
+    color: #555;
+}

@@ -1,0 +1,25 @@
+# Create Angular App
+ng new my-app
+
+#Add Component
+ng generate component name_of_comp
+
+
+---------->Ignore above lines<----------
+
+# Install Angular CLI
+npm install -g @angular/cli
+
+# Move into dir
+cd my-app
+
+#Install node packages
+npm install
+
+# Start the app
+ng serve --open
+
+
+
+
+
