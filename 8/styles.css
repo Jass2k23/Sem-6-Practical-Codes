@@ -1,0 +1,24 @@
+/* styles.css */
+
+/* Header */
+.ui-header {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Footer */
+.ui-footer {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Page content */
+.ui-content {
+    padding: 20px;
+}
+
+/* Button */
+.ui-btn {
+    background-color: #007bff;
+    color: #fff;
+}

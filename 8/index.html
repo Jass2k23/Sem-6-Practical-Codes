@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Mobile Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your custom CSS file -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<!-- Start of first page -->
+<div data-role="page" id="page1">
+
+    <div data-role="header">
+        <h1>Welcome to My Website</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <p>This is a simple mobile website created using jQuery Mobile.</p>
+        <p>Click the button below to navigate to the second page.</p>
+        <a href="#page2" class="ui-btn ui-btn-b">Go to Page 2</a>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Footer content</h4>
+    </div><!-- /footer -->
+</div><!-- /page1 -->
+
+<!-- Start of second page -->
+<div data-role="page" id="page2">
+
+    <div data-role="header">
+        <h1>Second Page</h1>
+    </div><!-- /header -->
+
+    <div role="main" class="ui-content">
+        <p>This is the second page of the website.</p>
+        <p>Click the button below to go back to the first page.</p>
+        <a href="#page1" class="ui-btn ui-btn-b">Go Back</a>
+    </div><!-- /content -->
+
+    <div data-role="footer">
+        <h4>Footer content</h4>
+    </div><!-- /footer -->
+</div><!-- /page2 -->
+
+<script>
+    $(document).ready(function () {
+      // Initialize jQuery Mobile
+      $("body").enhanceWithin();
+    });
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,1 @@
+open the index.html file on the live server
